@@ -95,62 +95,62 @@
 
 //CAJERO AUTOMATICO
 
-let saldo = 100000;
+// let saldo = 100000;
 
-let opcion;
-while (opcion !== 4) {
-    opcion = parseInt(prompt(
-        "Bienvenido a tu cajero automatico que deseas realiza hoy\n " +
-        "1. Ver Saldo\n" +
-        "2. Depositar Dinero\n" +
-        "3. Retirar Dinero\n" +
-        "4. Salir\n\n" +
-        "Elige una opción:"
+// let opcion;
+// while (opcion !== 4) {
+//     opcion = parseInt(prompt(
+//         "Bienvenido a tu cajero automatico que deseas realiza hoy\n " +
+//         "1. Ver Saldo\n" +
+//         "2. Depositar Dinero\n" +
+//         "3. Retirar Dinero\n" +
+//         "4. Salir\n\n" +
+//         "Elige una opción:"
 
-    ))
+//     ))
 
-    if (isNaN(opcion)) {
-        alert("Ingrese un numero valido");
-        continue;
-    }
+//     if (isNaN(opcion)) {
+//         alert("Ingrese un numero valido");
+//         continue;
+//     }
 
 
-    switch (opcion) {
+//     switch (opcion) {
 
-        case 1:
-            document.write("Tu saldo es de : $ " + saldo);
-            break;
+//         case 1:
+//             alert("Tu saldo es de : $ " + saldo);
+//             break;
 
-        case 2:
-            let deposito = parseFloat(prompt("Cuanto desea depositar :"));
-            if(!isNaN(deposito &&  deposito>0)){
-                saldo+=deposito
-                document.write("Tu deposito fue de : $" + deposito + "\nTu saldo ahora es de : $" + saldo);
+//         case 2:
+//             let deposito = parseFloat(prompt("Cuanto desea depositar :"));
+//             if(!isNaN(deposito &&  deposito>0)){
+//                 saldo+=deposito
+//                 alert("Tu deposito fue de : $" + deposito + "\nTu saldo ahora es de : $" + saldo);
                 
-            }else{
-                alert("Monto insuficiente");
-            }
-            break;
+//             }else{
+//                 alert("Monto insuficiente");
+//             }
+//             break;
             
         
 
-        case 3:
-            let retiro = parseFloat(prompt("Cuanto desea retirar :"));
-            if(!isNaN(retiro &&  retiro>0)){
-                saldo-=retiro;
-                document.write("Tu retiro fue de : $" + retiro + "\nTu saldo ahora es de : $" + saldo );
+//         case 3:
+//             let retiro = parseFloat(prompt("Cuanto desea retirar :"));
+//             if(!isNaN(retiro &&  retiro>0)){
+//                 saldo-=retiro;
+//                alert  ("Tu retiro fue de : $" + retiro + "\nTu saldo ahora es de : $" + saldo );
                 
-            }else{
-                alert("Monto insuficiente");
-            }
-            break;
+//             }else{
+//                 alert("Monto insuficiente");
+//             }
+//             break;
 
-        case 4:
-            alert("Saliendo del programa");
-            break;
+//         case 4:
+//             alert("Saliendo del programa");
+//             break;
 
-        default:
-            alert("Ingrese una de las opciones");
+//         default:
+//             alert("Ingrese una de las opciones");
 
-    }
-}
+//     }
+// }
