@@ -153,4 +153,56 @@
 //             alert("Ingrese una de las opciones");
 
 //     }
-// }
+
+//}
+
+// Parecido a lo meetodos PERO ES UNA FUNCION
+function saludar(){
+
+    alert("hola desde la prision ")
+}
+
+//LLAMADO A LA FUNCION
+saludar();
+
+/*
+Funciones anonimas: es una funcion sin nombre,asignada dentro de una variable
+o constante. 
+
+onst nombre =funcion(){
+
+}
+Ejemplo :
+*/
+let multiplicar = function(){
+
+    let numero1 = Number(prompt("Ingrese un numero : "));
+    let numero2 = Number(prompt("Ingrese otro numero : "));
+
+    let resultado = numero1*numero2;
+
+    alert(`El resultado es ${resultado}`)
+}
+//para ejecutar el nombre de la funcion,seri el nombre de la variable o constante 
+multiplicar();
+//Estas se usas para cosas rapidas y que no necesitan reutilizarse mucho 
+
+//Funciones con parametros
+
+function saludarPersona(nombre){
+
+    alert(`Hola ${nombre}, bienvenido a la prision`);
+}
+saludarPersona("ESTEBAN");
+
+function sumar(a,b) {
+    return a+b;
+
+}
+let resultado=sumar(4,6);
+console.log("El resultado de la operacion es : " + resultado);
+
+//FUNCION FLECHA
+const dividir = (x,y)=>x/y
+
+alert(`el resultado de dividir es : ${dividir(20,2)}`);
